@@ -2,11 +2,14 @@ body{
     font-family: "Ubuntu", sans-serif;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #5e5b5bad;
+    background-image: url("./img/fundo-dia.jpg");
     color: #333333;
 }
 body.modo-escuro{
     background-image: url('./img/ceu-estrelado.jpg');
+    background-repeat: no-repeat;
+    background-attachment:;
+    background-size: 100% 100%;
     color: #f5f5f5;
 }
 header{
@@ -40,7 +43,7 @@ main .listagem-pokemon{
     justify-content: center;
 }
 main .cartao-pokemon{
-    background-color: #d8e3ec;
+    background-image: url('./img/pexels-jan-van-der-wolf-15238430.jpg');
     width: 200px;
     padding: 15px;
     display: flex;
@@ -50,9 +53,7 @@ main .cartao-pokemon{
     border-radius: 25px;
     transition: 0.2s ease-in-out;
 }
-main .cartao-pokemon:hover{
-    background-color: #96d9d6;
-}
+
 .modo-escuro .cartao-pokemon{
     background-image: url('./img/fundo-pokemon.jpg');
     background-repeat: no-repeat;
@@ -62,10 +63,11 @@ main .cartao-pokemon:hover{
 main .cartao-pokemon .informacoes{
     display: flex;
     justify-content: space-between;
-    border: 1px solid #333333;
+    border: 1.5px solid #ee8130;
     border-radius: 15px;
 }
 main .cartao-pokemon .informacoes span{
+    color: aqua ;
     padding: 5px;
     text-transform: uppercase;
     font-size: 17px;
@@ -98,6 +100,7 @@ main .cartao-pokemon .tipo{
     background-color: #a6b91a;
 }
 main .descricao{
+    color:#eee9e9;
     max-height: 80px;
     overflow-y: scroll;
     font-size: 14px;
